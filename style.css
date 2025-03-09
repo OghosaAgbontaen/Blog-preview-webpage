@@ -1,9 +1,14 @@
+@font-face {
+    font-family: myFont;
+    src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+}
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 body{
+    font-family:myFont;
     background-color:  hsl(47, 88%, 63%);
     height: 100vh;
     display: flex;
@@ -12,7 +17,7 @@ body{
     align-items: center;
 }
 .box{
-    height: 550px;
+    height: 580px;
     width: 400px;
     position: relative;
 }
@@ -81,5 +86,6 @@ body{
 @media (max-width:600px) {
     .box{
         width: 80%;
+        height:60%;
     }
 }
